@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - house@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="house">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="phpmyadmin"/>
+    <schema id="5" name="ruidao"/>
+    <schema id="6" name="test"/>
+    <table id="7" parent="1" name="house_source"/>
+    <column id="8" parent="7" name="house_name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="9" parent="7" name="house_location">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="10" parent="7" name="house_total_price">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="11" parent="7" name="house_area">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="12" parent="7" name="house_average_price">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="13" parent="7" name="house_built_year">
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="14" parent="7" name="house_type">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="15" parent="7" name="house_property_right_years">
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="16" parent="7" name="house_design">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="17" parent="7" name="house_orientation">
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <column id="18" parent="7" name="house_floor">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="19" parent="7" name="house_decoration">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="20" parent="7" name="house_has_elevator">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="21" parent="7" name="house_has_heating">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="22" parent="7" name="house_description">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="23" parent="7" name="house_id">
+      <mandatory>1</mandatory>
+      <data-type>int(100) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <key id="24" parent="7" name="PRIMARY">
+      <columns>house_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
